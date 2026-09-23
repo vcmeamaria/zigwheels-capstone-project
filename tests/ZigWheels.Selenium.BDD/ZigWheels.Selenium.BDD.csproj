@@ -30,8 +30,6 @@
     <Folder Include="Components\" />
     <Folder Include="TestData\" />
     <Folder Include="Support\" />
-    <Folder Include="Pages\" />
-    <Folder Include="StepDefinitions\" />
   </ItemGroup>
 
   <ItemGroup>
