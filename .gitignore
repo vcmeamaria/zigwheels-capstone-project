@@ -1,0 +1,105 @@
+# ============================================================
+# ZigWheels Capstone Project
+# Git Ignore Rules
+# ============================================================
+
+# ------------------------------------------------------------
+# .NET build output
+# ------------------------------------------------------------
+bin/
+obj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+
+# ------------------------------------------------------------
+# Visual Studio
+# ------------------------------------------------------------
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ------------------------------------------------------------
+# JetBrains / Rider
+# ------------------------------------------------------------
+.idea/
+*.sln.iml
+
+# ------------------------------------------------------------
+# Test results
+# ------------------------------------------------------------
+TestResults/
+*.trx
+
+# ------------------------------------------------------------
+# Allure
+# ------------------------------------------------------------
+allure-results/
+allure-report/
+artifacts/allure-results/
+
+# ------------------------------------------------------------
+# Selenium / Playwright evidence
+# ------------------------------------------------------------
+artifacts/screenshots/
+artifacts/traces/
+artifacts/videos/
+artifacts/logs/
+
+playwright-report/
+blob-report/
+test-results/
+
+# ------------------------------------------------------------
+# JMeter generated reports
+# ------------------------------------------------------------
+performance/jmeter/reports/*
+artifacts/jmeter/*
+
+# Keep report directories available in Git when placeholders
+# are added later.
+!performance/jmeter/reports/.gitkeep
+!artifacts/jmeter/.gitkeep
+
+# ------------------------------------------------------------
+# OWASP ZAP generated reports
+# ------------------------------------------------------------
+security/zap/reports/*
+artifacts/zap/*
+
+!security/zap/reports/.gitkeep
+!artifacts/zap/.gitkeep
+
+# ------------------------------------------------------------
+# Environment variables and secrets
+# ------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+
+# The example configuration is safe to commit.
+!.env.example
+
+# ------------------------------------------------------------
+# Logs
+# ------------------------------------------------------------
+*.log
+logs/
+
+# ------------------------------------------------------------
+# Operating system files
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ------------------------------------------------------------
+# Temporary files
+# ------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
