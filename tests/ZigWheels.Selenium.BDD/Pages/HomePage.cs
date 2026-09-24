@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using ZigWheels.Framework.Core.Configuration;
+using ZigWheels.Selenium.BDD.Components;
 
 namespace ZigWheels.Selenium.BDD.Pages;
 
@@ -19,11 +20,18 @@ public class HomePage
     }
 
     /// <summary>
-    /// Opens the configured ZigWheels homepage.
+    /// Opens the configured ZigWheels homepage and handles the
+    /// privacy/cookie consent dialog when it appears.
     /// </summary>
     public void Open()
     {
-        _driver.Navigate().GoToUrl(TestConfiguration.BaseUrl);
+        _driver.Navigate().GoToUrl(
+            TestConfiguration.BaseUrl);
+
+        var cookieConsent =
+            new CookieConsentComponent(_driver);
+
+        cookieConsent.AcceptIfPresent();
     }
 
     /// <summary>
@@ -31,7 +39,10 @@ public class HomePage
     /// </summary>
     public bool IsLoaded()
     {
-        if (!Uri.TryCreate(_driver.Url, UriKind.Absolute, out var currentUri))
+        if (!Uri.TryCreate(
+                _driver.Url,
+                UriKind.Absolute,
+                out var currentUri))
         {
             return false;
         }
