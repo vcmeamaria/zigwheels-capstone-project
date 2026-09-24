@@ -10,11 +10,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Allure.Reqnroll" Version="2.15.0" />
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="Microsoft.Playwright.NUnit" Version="1.62.0" />
     <PackageReference Include="NUnit" Version="3.14.0" />
     <PackageReference Include="NUnit.Analyzers" Version="3.9.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+    <PackageReference Include="Reqnroll.NUnit" Version="3.3.4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,12 +27,8 @@
   <ItemGroup>
     <Folder Include="Features\" />
     <Folder Include="Components\" />
-    <Folder Include="Fixtures\" />
-    <Folder Include="Hooks\" />
     <Folder Include="TestData\" />
     <Folder Include="Support\" />
-    <Folder Include="Pages\" />
-    <Folder Include="StepDefinitions\" />
   </ItemGroup>
 
   <ItemGroup>
