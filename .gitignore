@@ -103,3 +103,9 @@ Desktop.ini
 *.bak
 *.swp
 *~
+
+# ------------------------------------------------------------
+# JMeter generated performance reports
+# ------------------------------------------------------------
+performance/jmeter/reports/*
+!performance/jmeter/reports/.gitkeep
