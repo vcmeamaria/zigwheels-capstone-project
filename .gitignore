@@ -109,3 +109,9 @@ Desktop.ini
 # ------------------------------------------------------------
 performance/jmeter/reports/*
 !performance/jmeter/reports/.gitkeep
+
+# ------------------------------------------------------------
+# Accessibility generated reports
+# ------------------------------------------------------------
+accessibility/reports/*
+!accessibility/reports/.gitkeep
