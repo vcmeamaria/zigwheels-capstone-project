@@ -115,3 +115,9 @@ performance/jmeter/reports/*
 # ------------------------------------------------------------
 accessibility/reports/*
 !accessibility/reports/.gitkeep
+
+# ------------------------------------------------------------
+# OWASP ZAP generated security reports
+# ------------------------------------------------------------
+security/zap/reports/*
+!security/zap/reports/.gitkeep
